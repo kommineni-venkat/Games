@@ -1,5 +1,6 @@
 # import random module
 import random
+
 # print multiline instruction
 # performstring concatenation of string
 print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
@@ -41,13 +42,9 @@ while True:
     # of random module
     comp_choice = random.randint(1, 3)
 
-    # looping until comp_choice value
-    # is equal to the choice value
+   
     while comp_choice == choice:
         comp_choice = random.randint(1, 3)
-
-     # initialize value of comp_choice_name
-    # variable corresponding to the choice value
     if comp_choice == 1:
         comp_choice_name = 'RocK'
     elif comp_choice == 2:
@@ -56,11 +53,11 @@ while True:
         comp_choice_name = 'Scissors'
     print("Computer choice is \n", comp_choice_name)
     print(choice_name, 'Vs', comp_choice_name)
-    # we need to check of a draw
+    
     if choice == comp_choice:
         print('Its a Draw', end="")
         result = "DRAW"
-    # condition for winning
+   
     if (choice == 1 and comp_choice == 2):
         print('paper wins =>', end="")
         result = 'Paper'
@@ -81,7 +78,7 @@ while True:
     elif (choice == 3 and comp_choice == 2):
         print('Scissors wins =>', end="")
         result = 'Rock'
-     # Printing either user or computer wins or draw
+     
     if result == 'DRAW':
         print("<== Its a tie ==>")
     if result == choice_name:
@@ -89,7 +86,7 @@ while True:
     else:
         print("<== Computer wins ==>")
     print("Do you want to play again? (Y/N)")
-    # if user input n or N then condition is True
+    
     ans = input().lower()
     if ans == 'n':
         break
