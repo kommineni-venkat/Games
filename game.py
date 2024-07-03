@@ -74,6 +74,4 @@ while True:
     ans = input().lower()
     if ans == 'n':
         break
-#loop
-# we print thanks for playing
 print("thanks for playing")
